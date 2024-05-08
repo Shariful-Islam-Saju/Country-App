@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;600;700&family=Roboto:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: roboto;
+  font-weight: bold;
+}
+.container {
+  display: grid;
+  gap: 1.2rem;
+  padding: 1rem;
+}
+
+.country-img {
+  width: 100%;
+  border: 2px solid rgb(140, 140, 140);
+  border-radius: 8px;
+}
+
+.container-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 250px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.21);
+  padding: 1rem;
+  box-shadow: 2px 2px 3px rgb(155, 155, 155);
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+/* Styles for screens smaller than 600px */
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Styles for screens between 600px and 900px */
+@media (min-width: 600px) and (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Styles for screens larger than 900px */
+@media (min-width: 900px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.sp {
+  color: green;
+}
+
+.info {
+  margin: 8px;
+}
+
+.delete {
+  font-size: 16px;
+  padding: 0.8rem;
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.delete:active {
+  background-color: blue;
+}
+
+.scbox {
+  padding: 1rem;
+}
+.search {
+  width: 100%;
+  border: 2px solid;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
